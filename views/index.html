@@ -13,6 +13,13 @@
 <body>
     <header>
         <h1>A url shortener app made by Samiul khan</h1>
+        <form action="/url" method="POST" style="display: flex; flex-direction:column">
+            <label for="alias">Provide a alternative name for the website</label>
+        <input type="text" placeholder="Alias name if not provided a default nanoid will be given to this field,i don't care about you" id="alias" name="alias">
+        <label for="url">Copy the url from the website url bar  you want to alias</label>
+        <input type="url" placeholder="Url" id="url" required="true" name="url">
+        <input type="submit" value="submit">
+        </form>
     </header>
 </body>
 </html>
