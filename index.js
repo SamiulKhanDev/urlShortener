@@ -55,10 +55,12 @@ app.post('/url', async(req, res) => {
             "alias": alias,
             "url":url,
         })
+        // <p style="font-size:50px;"> <a href= http://localhost:5000/${newObj.alias}>New Link OF The Site Is</a></p>
+        //  <p style="font-size:50px;"> <a href= https://urlshortenersamiul.herokuapp.com/${newObj.alias}>New Link OF The Site Is</a></p>
         const newObj = await newSchema.save();
         res.send(`<div>
     
-        <p style="font-size:50px;"> <a href="https://urlshortenersamiul.herokuapp.com/${newObj.alias}">New Link OF The Site Is</a></p>
+        <p style="font-size:50px;"> <a href= https://urlshortenersamiul.herokuapp.com/${newObj.alias}>New Link OF The Site Is</a></p>
         <a style="font-size:20px;" href="/">go back</a>
 
        
